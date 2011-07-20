@@ -1,10 +1,10 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
-guard 'coffeescript', :output => 'spec/javascripts/compiled' do
+guard 'coffeescript', :output => 'spec/javascripts/compiled/js' do
   watch(/^app\/assets\/javascripts\/coffee\/(.*)\.coffee/)
 end
 
-guard 'coffeescript', :output => 'spec/javascripts/compiled' do
+guard 'coffeescript', :output => 'spec/javascripts/compiled/test' do
   watch(/^spec\/coffee\/(.*)\.coffee/)
 end
 

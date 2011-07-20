@@ -12,7 +12,7 @@
 #
 src_files:
   - app/assets/javascripts/js/**/*.js
-  - spec/javascripts/compiled/**/*.js
+  - spec/javascripts/compiled/js/**/*.js
 
 # stylesheets
 #
@@ -74,5 +74,5 @@ src_dir:
 #
 # spec_dir: spec/javascripts
 #
-spec_dir: spec/javascripts
+spec_dir: spec/javascripts/compiled/test/
 
