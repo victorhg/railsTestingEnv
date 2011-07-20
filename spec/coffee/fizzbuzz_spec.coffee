@@ -22,5 +22,8 @@ describe "FizzBuzz", ->
        result = FizzBuzz.map(22)
        expect(result).toEqual(22)
 
+   it "should map 30 to FizzBuzz", ->
+       result = FizzBuzz.map(30)
+       expect(result).toEqual("FizzBuzz")
 
 

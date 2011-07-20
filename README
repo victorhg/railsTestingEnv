@@ -3,3 +3,26 @@ Rails 3.1 assets inspiration: https://gist.github.com/923998
 Automated JS testing reference: https://gist.github.com/673967
 
 
+Integrated so far (all about buzzwords):
+
+- Rspec
+- Autotest
+- Sprockets
+- coffeescript
+- jasmine
+- guard
+- mongoid
+
+
+How to run:
+- git clone
+- bundle install
+- bundle exec rake jasmine
+- guard
+- autotest (no ruby specs so far)
+
+
+That's all folks
+
+
+
