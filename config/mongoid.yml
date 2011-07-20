@@ -1,0 +1,25 @@
+defaults: &defaults
+  host: localhost
+  port: 27017 #<%= ENV['MONGOID_PORT'] %>
+#  skip_version_check: true
+
+development:
+  <<: *defaults
+  host: localhost
+  database: testEnv
+
+
+test:
+  <<: *defaults
+  database: testEnv_test #<%= ENV['MONGOID_DATABASE'] %>
+
+# set these environment variables on your prod server
+production:
+  <<: *defaults
+  host: staff.mongohq.com #<%= ENV['MONGOID_HOST'] %>
+  port: 10043 #<%= ENV['MONGOID_PORT'] %>
+  username: user #<%= ENV['MONGOID_USERNAME'] %>
+  password: 123456 #<%= ENV['MONGOID_PASSWORD'] %>
+  database: example_testEnv #<%= ENV['MONGOID_DATABASE'] %>
+
+

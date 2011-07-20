@@ -3,7 +3,9 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.7'
 
 
-gem 'sqlite3'
+gem 'bson_ext'
+gem 'mongoid', "~> 2.0"
+gem 'mongo_ext'
 
 
 gem 'coffee-script'
@@ -17,6 +19,9 @@ group :production do
 end
 
 group :test do
+  gem "mongoid-rspec"
+  gem "spork"
+
   gem 'autotest-rails'
   gem "autotest-growl"
   gem 'test-unit', '=1.2.3'

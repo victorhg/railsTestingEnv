@@ -1,4 +1,5 @@
 #from https://gist.github.com/923998
+require 'singleton'
 class AssetServer < Sprockets::Environment
   include Singleton
 
